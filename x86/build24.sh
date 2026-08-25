@@ -246,7 +246,7 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始构建......打印所有包名"
 echo "$PACKAGES"
 
 # 开始构建
-ROOTFS_PARTSIZE=${ROOTFS_PARTSIZE:-"2048"}
+ROOTFS_PARTSIZE=${ROOTFS_PARTSIZE:-"256"}
 make image PROFILE=generic PACKAGES="$PACKAGES" FILES="files" ROOTFS_PARTSIZE=$ROOTFS_PARTSIZE
 
 if [ $? -ne 0 ]; then
