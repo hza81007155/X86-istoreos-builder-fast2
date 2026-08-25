@@ -41,7 +41,7 @@ on:
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
-        default: '2048'
+        default: '256'
         type: choice
         options:
           - '256'
